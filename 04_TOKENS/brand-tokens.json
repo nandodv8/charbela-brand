@@ -1,0 +1,200 @@
+{
+  "$schema": "https://charbela.local/brand-tokens.schema.json",
+  "meta": {
+    "name": "Charbela",
+    "descriptor": "bakes",
+    "version": "1.0.0",
+    "updated": "2026-10-12",
+    "source": "Brandbook CHARBELA_TIERRA_AP_V3 — Polen Estudio Creativo (2026-10-01)",
+    "authority": "BRAND.md es la fuente de verdad. Este archivo deriva de el; no editar sin actualizar BRAND.md.",
+    "contrastMethod": "WCAG 2.1 relative luminance"
+  },
+
+  "brand": {
+    "cafe": {
+      "name": "Café Choco Chips",
+      "hex": "#5C3339",
+      "rgb": [92, 51, 57],
+      "cmyk": [44, 80, 60, 45],
+      "role": "texto principal, superficie oscura, logo sobre fondo claro"
+    },
+    "cafeVariante": {
+      "name": "Café Variante",
+      "hex": "#472429",
+      "rgb": [71, 36, 41],
+      "cmyk": [50, 78, 63, 62],
+      "role": "texto largo, superficie profunda, modo oscuro"
+    },
+    "rosa": {
+      "name": "Rosa Antojo",
+      "hex": "#F6B3D9",
+      "rgb": [246, 179, 217],
+      "cmyk": [0, 39, 0, 0],
+      "role": "color base de marca; superficie y fondo. NUNCA texto"
+    },
+    "rosaVariante": {
+      "name": "Rosa Variante",
+      "hex": "#ED9DCA",
+      "rgb": [237, 157, 202],
+      "cmyk": [4, 47, 0, 0],
+      "role": "profundidad del rosa, estados hover, sombra plana"
+    },
+    "beige": {
+      "name": "Beige Evento",
+      "hex": "#FCFBF0",
+      "rgb": [252, 251, 240],
+      "cmyk": [1, 0, 6, 0],
+      "role": "fondo por defecto; dominante en via Celebracion"
+    },
+    "naranja": {
+      "name": "Naranja Metiche",
+      "hex": "#F9603D",
+      "rgb": [249, 96, 61],
+      "cmyk": [0, 82, 85, 0],
+      "role": "acento stopper; superficie, badge, icono. Maximo 15% de la pieza. NUNCA texto salvo sobre cafeVariante"
+    }
+  },
+
+  "functionalTints": {
+    "_note": "Derivados nuestros para interfaz (estados, bordes, fondos de tarjeta). NO son colores de marca y no se usan en piezas graficas ni impresas.",
+    "rosaTint10": { "hex": "#FDF0F7", "use": "fondo de tarjeta o seccion en via Bakes" },
+    "rosaTint25": { "hex": "#FBE1F0", "use": "fondo de chip, badge suave, fila alterna" },
+    "beigeDeep": { "hex": "#EFEBE1", "use": "fondo hundido, zona de formulario" },
+    "border": { "hex": "#DFD7CF", "use": "bordes y separadores" },
+    "textMuted": { "hex": "#7F5F61", "use": "texto secundario (5.44 sobre beige)" },
+    "naranjaTint": { "hex": "#FEE7E2", "use": "fondo de alerta suave o destacado" },
+    "naranjaDeep": { "hex": "#BB4B36", "use": "naranja accesible como texto o boton (blanco encima = 5.03)" },
+    "darkSurface": { "hex": "#271417", "use": "modo oscuro: tarjetas" },
+    "darkBase": { "hex": "#1B0E10", "use": "modo oscuro: fondo base" }
+  },
+
+  "contrast": {
+    "recommended": [
+      { "fg": "#472429", "bg": "#FCFBF0", "ratio": 13.01, "level": "AAA", "use": "texto largo" },
+      { "fg": "#5C3339", "bg": "#FCFBF0", "ratio": 10.16, "level": "AAA", "use": "par por defecto" },
+      { "fg": "#FCFBF0", "bg": "#5C3339", "ratio": 10.16, "level": "AAA", "use": "superficie oscura" },
+      { "fg": "#FFFFFF", "bg": "#5C3339", "ratio": 10.57, "level": "AAA", "use": "boton primario" },
+      { "fg": "#472429", "bg": "#F6B3D9", "ratio": 7.97, "level": "AAA", "use": "texto sobre rosa" },
+      { "fg": "#5C3339", "bg": "#F6B3D9", "ratio": 6.22, "level": "AA", "use": "texto sobre rosa" },
+      { "fg": "#5C3339", "bg": "#ED9DCA", "ratio": 5.17, "level": "AA" },
+      { "fg": "#F9603D", "bg": "#472429", "ratio": 4.36, "level": "AA", "use": "unico caso de naranja como texto" }
+    ],
+    "largeTextOnly": [
+      { "fg": "#5C3339", "bg": "#F9603D", "ratio": 3.41 },
+      { "fg": "#FFFFFF", "bg": "#F9603D", "ratio": 3.10 }
+    ],
+    "forbidden": [
+      { "fg": "#F9603D", "bg": "#FCFBF0", "ratio": 2.98, "reason": "falla incluso en texto grande; error mas frecuente" },
+      { "fg": "#FCFBF0", "bg": "#ED9DCA", "ratio": 1.97 },
+      { "fg": "#F9603D", "bg": "#F6B3D9", "ratio": 1.83 },
+      { "fg": "#FFFFFF", "bg": "#F6B3D9", "ratio": 1.70 },
+      { "fg": "#FCFBF0", "bg": "#F6B3D9", "ratio": 1.63 }
+    ]
+  },
+
+  "typography": {
+    "family": "Parkinsans",
+    "license": "SIL Open Font License",
+    "fallback": "Parkinsans, 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif",
+    "variableFile": "01 Tipografias/Parkinsans-VariableFont_wght.ttf",
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "usage": {
+      "display": "extrabold",
+      "heading": "bold",
+      "subheading": "semibold",
+      "button": "semibold",
+      "price": "semibold",
+      "body": "regular",
+      "caption": "light"
+    },
+    "retired": ["Ballerina Script", "Optima"],
+    "rules": [
+      "una sola familia por pieza",
+      "mayusculas sostenidas solo en etiquetas cortas",
+      "sin degradados ni sombras en texto de marca"
+    ]
+  },
+
+  "logo": {
+    "structures": ["logotipo", "logotipo-con-descriptivo"],
+    "colorways": ["cafe", "crema", "rosa"],
+    "preferredFormat": { "web": "svg", "print": "eps", "fallback": "png" },
+    "basePath": "01_BRANDING/POLEN Marca Charbela/02 Sistema Charbela/Logotipo Charbela/",
+    "rules": {
+      "conDescriptivo": ["empaque", "uniformes", "redes-bakes", "catalogo-retail", "feria", "isla"],
+      "limpio": ["cotizacion", "portal-cliente", "catalogo-eventos", "religiosos", "bodas", "corporativo", "facturacion"],
+      "darkBackground": "logo claro (crema)",
+      "lightBackground": "logo oscuro (cafe)"
+    },
+    "forbidden": ["cromatica no estipulada", "rotacion", "cambios no estipulados", "expansion", "degradado", "orden aleatorio", "compresion", "sombras", "bordes"],
+    "pending": ["area de respeto", "tamano minimo de reproduccion"]
+  },
+
+  "voice": {
+    "person": "primera persona del plural",
+    "tagline": "No fui yo, fue Charbela",
+    "archetypes": ["bufon", "cuidador"],
+    "registers": {
+      "A": {
+        "label": "Bakes / indulgencia",
+        "function": "detener el scroll y dar permiso",
+        "traits": ["complice", "traviesa", "divertida", "directa"],
+        "channels": ["instagram", "tienda-web", "empaque", "feria", "catalogo-retail"]
+      },
+      "B": {
+        "label": "Celebracion / eventos",
+        "function": "dar certeza",
+        "traits": ["calida", "precisa", "comprometida", "de oficio"],
+        "channels": ["whatsapp-cotizacion", "portal-cliente", "catalogo-eventos", "corporativo", "facturacion"]
+      }
+    },
+    "registerBOnly": [
+      "eventos religiosos",
+      "bodas",
+      "corporativo",
+      "dinero (cotizaciones, abonos, saldos, cobranza, facturacion)",
+      "seguridad alimentaria (alergenos, conservacion, refrigeracion)",
+      "incidentes (error, retraso, reclamo, disculpa)",
+      "contextos sensibles o de duelo"
+    ]
+  },
+
+  "pillars": {
+    "complicidad": { "n": 1, "status": "transversal", "role": "tono, no mensaje" },
+    "personalizacion": { "n": 2, "status": "activo", "weight": 0.6, "role": "mensaje principal 2026-2027" },
+    "creacion": {
+      "n": 3,
+      "status": "pausa-drops",
+      "weight": 0.4,
+      "vehicles": ["caja degustacion ultimo viernes del mes", "colecciones de temporada"],
+      "reactivate": "cuando la isla tenga fecha firme"
+    }
+  },
+
+  "communicationSplit": {
+    "current": { "bakes": 0.3, "celebracion": 0.7, "since": "2026-10" },
+    "preIsland": { "bakes": 0.5, "celebracion": 0.5, "trigger": "contrato de local firmado" },
+    "island": { "bakes": 0.8, "celebracion": 0.2, "trigger": "apertura", "projected": 2027 }
+  },
+
+  "masterData": {
+    "years": 14,
+    "originYear": null,
+    "phone": null,
+    "whatsapp": null,
+    "instagram": { "current": "@charbelapasteleria", "target": "@charbelabakes", "migrated": false },
+    "web": { "current": "charbelapasteleria.com", "target": "charbela.ec", "migrated": false },
+    "publishWorkshopAddress": false,
+    "coverage": ["Guayaquil", "Samborondon", "Daule"],
+    "cafeteriaLine": false,
+    "loyaltyMechanic": null,
+    "_pending": ["originYear", "phone", "whatsapp", "loyaltyMechanic", "fecha de corte visible"]
+  }
+}

@@ -1,0 +1,171 @@
+CHARBELA BRAND OS v1.1 - manifiesto de archivos
+generado: 2026-10-12
+
+      7546  01_DOCS/AUDITORIA_COLOR.md
+     36374  01_DOCS/BRAND.md
+      6121  01_DOCS/INSTRUCCIONES_PROYECTO.md
+      9334  01_DOCS/MICROCOPY.md
+      4413  02_PARA_EL_EQUIPO/GUIA_CHARBELA_Y_GLADYS.md
+      3603  02_PARA_EL_EQUIPO/INSTALACION_CLAUDE.md
+     11433  02_PARA_EL_EQUIPO/SETUP_PROYECTO.md
+      2779  03_SKILLS/_zips/charbela-post.zip
+      2208  03_SKILLS/_zips/charbela-producto.zip
+      2710  03_SKILLS/_zips/charbela-revision.zip
+      2566  03_SKILLS/_zips/charbela-voz.zip
+      2577  03_SKILLS/_zips/charbela-whatsapp.zip
+      4771  03_SKILLS/charbela-post/SKILL.md
+      3749  03_SKILLS/charbela-producto/SKILL.md
+      4620  03_SKILLS/charbela-revision/SKILL.md
+      4426  03_SKILLS/charbela-voz/SKILL.md
+      4688  03_SKILLS/charbela-whatsapp/SKILL.md
+      4326  04_TOKENS/INTEGRACION_CRM.md
+      8096  04_TOKENS/brand-tokens.json
+      8673  04_TOKENS/brand.css
+  45247093  05_MARCA/brandbook/CHARBELA_TIERRA_AP_V3.pdf
+    104970  05_MARCA/cromatica/Cromática CMYK_Charbela_AP.pdf
+     99591  05_MARCA/cromatica/Cromática RGB_Charbela_AP.pdf
+     21299  05_MARCA/highlights-instagram/Horarios.svg
+      4593  05_MARCA/highlights-instagram/bocaditos.svg
+      8368  05_MARCA/highlights-instagram/cakes.svg
+     26213  05_MARCA/highlights-instagram/delivery.svg
+     18906  05_MARCA/highlights-instagram/menu.svg
+      6190  05_MARCA/highlights-instagram/perfil.svg
+     21299  05_MARCA/highlights-instagram/svg-normalizado/Horarios.svg
+      4593  05_MARCA/highlights-instagram/svg-normalizado/bocaditos.svg
+      8368  05_MARCA/highlights-instagram/svg-normalizado/cakes.svg
+     26213  05_MARCA/highlights-instagram/svg-normalizado/delivery.svg
+     18906  05_MARCA/highlights-instagram/svg-normalizado/menu.svg
+      6190  05_MARCA/highlights-instagram/svg-normalizado/perfil.svg
+    692550  05_MARCA/logotipo/logotipo-con-descriptivo/eps/Logotipo con descriptivo cafe.eps
+    692814  05_MARCA/logotipo/logotipo-con-descriptivo/eps/Logotipo con descriptivo crema.eps
+    691878  05_MARCA/logotipo/logotipo-con-descriptivo/eps/Logotipo con descriptivo rosa.eps
+     53488  05_MARCA/logotipo/logotipo-con-descriptivo/png/Logotipo con descriptivo cafe.png
+     53226  05_MARCA/logotipo/logotipo-con-descriptivo/png/Logotipo con descriptivo crema.png
+     53101  05_MARCA/logotipo/logotipo-con-descriptivo/png/Logotipo con descriptivo rosa.png
+     10640  05_MARCA/logotipo/logotipo-con-descriptivo/svg/Logotipo con descriptivo cafe.svg
+     10640  05_MARCA/logotipo/logotipo-con-descriptivo/svg/Logotipo con descriptivo crema.svg
+     10640  05_MARCA/logotipo/logotipo-con-descriptivo/svg/Logotipo con descriptivo rosa.svg
+    610194  05_MARCA/logotipo/logotipo/eps/Logotipo cafe.eps
+    609566  05_MARCA/logotipo/logotipo/eps/Logotipo crema.eps
+    609706  05_MARCA/logotipo/logotipo/eps/Logotipo rosa.eps
+     38154  05_MARCA/logotipo/logotipo/png/Logotipo cafe.png
+     38318  05_MARCA/logotipo/logotipo/png/Logotipo crema.png
+     38269  05_MARCA/logotipo/logotipo/png/Logotipo rosa.png
+      6607  05_MARCA/logotipo/logotipo/svg/Logotipo cafe.svg
+      6607  05_MARCA/logotipo/logotipo/svg/Logotipo crema.svg
+      6607  05_MARCA/logotipo/logotipo/svg/Logotipo rosa.svg
+    124542  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 10.png
+    135059  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 11.png
+    111972  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 12.png
+     90484  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 13.png
+     97024  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 14.png
+    105411  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 15.png
+    132362  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 16.png
+    152209  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 2.png
+    128571  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 3.png
+    107806  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 4.png
+    127962  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 5.png
+     98593  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 6.png
+    135807  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 7.png
+    106839  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 8.png
+    130187  05_MARCA/recursos-graficos/png-sin-fondo/Artboard 9.png
+     18151  05_MARCA/recursos-graficos/svg-normalizado/Artboard 10 copy.svg
+     11286  05_MARCA/recursos-graficos/svg-normalizado/Artboard 10.svg
+     22730  05_MARCA/recursos-graficos/svg-normalizado/Artboard 11 copy.svg
+     13898  05_MARCA/recursos-graficos/svg-normalizado/Artboard 11.svg
+     18123  05_MARCA/recursos-graficos/svg-normalizado/Artboard 12 copy.svg
+     11581  05_MARCA/recursos-graficos/svg-normalizado/Artboard 12.svg
+     17397  05_MARCA/recursos-graficos/svg-normalizado/Artboard 13 copy.svg
+     17435  05_MARCA/recursos-graficos/svg-normalizado/Artboard 13.svg
+     15177  05_MARCA/recursos-graficos/svg-normalizado/Artboard 14 copy.svg
+      9208  05_MARCA/recursos-graficos/svg-normalizado/Artboard 14.svg
+     13803  05_MARCA/recursos-graficos/svg-normalizado/Artboard 15 copy.svg
+      9436  05_MARCA/recursos-graficos/svg-normalizado/Artboard 15.svg
+     36917  05_MARCA/recursos-graficos/svg-normalizado/Artboard 16 copy.svg
+     26043  05_MARCA/recursos-graficos/svg-normalizado/Artboard 16.svg
+     33672  05_MARCA/recursos-graficos/svg-normalizado/Artboard 2 copy.svg
+     23636  05_MARCA/recursos-graficos/svg-normalizado/Artboard 2.svg
+     24892  05_MARCA/recursos-graficos/svg-normalizado/Artboard 3 copy.svg
+     17147  05_MARCA/recursos-graficos/svg-normalizado/Artboard 3.svg
+     26602  05_MARCA/recursos-graficos/svg-normalizado/Artboard 4 copy.svg
+     17299  05_MARCA/recursos-graficos/svg-normalizado/Artboard 4.svg
+     27175  05_MARCA/recursos-graficos/svg-normalizado/Artboard 5 copy.svg
+     15828  05_MARCA/recursos-graficos/svg-normalizado/Artboard 5.svg
+     28116  05_MARCA/recursos-graficos/svg-normalizado/Artboard 6 copy.svg
+     16976  05_MARCA/recursos-graficos/svg-normalizado/Artboard 6.svg
+     28513  05_MARCA/recursos-graficos/svg-normalizado/Artboard 7 copy.svg
+     23183  05_MARCA/recursos-graficos/svg-normalizado/Artboard 7.svg
+     24136  05_MARCA/recursos-graficos/svg-normalizado/Artboard 8 copy.svg
+     14716  05_MARCA/recursos-graficos/svg-normalizado/Artboard 8.svg
+     25211  05_MARCA/recursos-graficos/svg-normalizado/Artboard 9 copy.svg
+     16078  05_MARCA/recursos-graficos/svg-normalizado/Artboard 9.svg
+     18151  05_MARCA/recursos-graficos/svg/Artboard 10 copy.svg
+     11286  05_MARCA/recursos-graficos/svg/Artboard 10.svg
+     22730  05_MARCA/recursos-graficos/svg/Artboard 11 copy.svg
+     13898  05_MARCA/recursos-graficos/svg/Artboard 11.svg
+     18123  05_MARCA/recursos-graficos/svg/Artboard 12 copy.svg
+     11581  05_MARCA/recursos-graficos/svg/Artboard 12.svg
+     17397  05_MARCA/recursos-graficos/svg/Artboard 13 copy.svg
+     17435  05_MARCA/recursos-graficos/svg/Artboard 13.svg
+     15177  05_MARCA/recursos-graficos/svg/Artboard 14 copy.svg
+      9208  05_MARCA/recursos-graficos/svg/Artboard 14.svg
+     13803  05_MARCA/recursos-graficos/svg/Artboard 15 copy.svg
+      9436  05_MARCA/recursos-graficos/svg/Artboard 15.svg
+     36917  05_MARCA/recursos-graficos/svg/Artboard 16 copy.svg
+     26043  05_MARCA/recursos-graficos/svg/Artboard 16.svg
+     33672  05_MARCA/recursos-graficos/svg/Artboard 2 copy.svg
+     23636  05_MARCA/recursos-graficos/svg/Artboard 2.svg
+     24892  05_MARCA/recursos-graficos/svg/Artboard 3 copy.svg
+     17147  05_MARCA/recursos-graficos/svg/Artboard 3.svg
+     26602  05_MARCA/recursos-graficos/svg/Artboard 4 copy.svg
+     17299  05_MARCA/recursos-graficos/svg/Artboard 4.svg
+     27175  05_MARCA/recursos-graficos/svg/Artboard 5 copy.svg
+     15828  05_MARCA/recursos-graficos/svg/Artboard 5.svg
+     28116  05_MARCA/recursos-graficos/svg/Artboard 6 copy.svg
+     16976  05_MARCA/recursos-graficos/svg/Artboard 6.svg
+     28513  05_MARCA/recursos-graficos/svg/Artboard 7 copy.svg
+     23183  05_MARCA/recursos-graficos/svg/Artboard 7.svg
+     24136  05_MARCA/recursos-graficos/svg/Artboard 8 copy.svg
+     14716  05_MARCA/recursos-graficos/svg/Artboard 8.svg
+     25211  05_MARCA/recursos-graficos/svg/Artboard 9 copy.svg
+     16078  05_MARCA/recursos-graficos/svg/Artboard 9.svg
+      4490  05_MARCA/tipografia/OFL.txt
+      2222  05_MARCA/tipografia/README.txt
+     45484  05_MARCA/tipografia/estaticas/Parkinsans-Bold.ttf
+     45484  05_MARCA/tipografia/estaticas/Parkinsans-ExtraBold.ttf
+     45364  05_MARCA/tipografia/estaticas/Parkinsans-Light.ttf
+     45320  05_MARCA/tipografia/estaticas/Parkinsans-Medium.ttf
+     45304  05_MARCA/tipografia/estaticas/Parkinsans-Regular.ttf
+     45500  05_MARCA/tipografia/estaticas/Parkinsans-SemiBold.ttf
+     92688  05_MARCA/tipografia/variable/Parkinsans-VariableFont_wght.ttf
+     40640  05_MARCA/tipografia/variable/Parkinsans-VariableFont_wght.woff2
+      3256  06_REFERENCIA/FUENTES_ORIGINALES.md
+   2925566  06_REFERENCIA/ejemplos-posteos/Artboard 1.png
+   1881108  06_REFERENCIA/ejemplos-posteos/Artboard 2.png
+   3618795  06_REFERENCIA/ejemplos-posteos/Artboard 3.png
+   3304637  06_REFERENCIA/ejemplos-posteos/Artboard 4.png
+   3556411  06_REFERENCIA/ejemplos-posteos/Artboard 5.png
+   3250720  06_REFERENCIA/ejemplos-posteos/Artboard 6.png
+   3518841  06_REFERENCIA/ejemplos-posteos/Artboard 7.png
+  56806498  07_EDITABLES/piezas-digitales/Ejemplos de posteos_Charbela_AP.ai
+   4783920  07_EDITABLES/piezas-digitales/Highlights para Instagram_Charbela_AP.ai
+   1727052  07_EDITABLES/piezas-fisicas/Caja de entrega_Charbela_AP.ai
+   9276712  07_EDITABLES/piezas-fisicas/Camiseta uniforme_Charbela_AP.ai
+  96733039  07_EDITABLES/piezas-fisicas/Catálogo_Charbela_AP.ai
+   1722221  07_EDITABLES/piezas-fisicas/Fajín de caja grande_Charbela_AP.ai
+   1693244  07_EDITABLES/piezas-fisicas/Funda de papel_Charbela_AP.ai
+   1589223  07_EDITABLES/piezas-fisicas/Gorra_Charbela_AP.ai
+   1467146  07_EDITABLES/piezas-fisicas/Letrero córporeo_Charbela_AP.ai
+   1594983  07_EDITABLES/piezas-fisicas/Mandil_Charbela_AP.ai
+   1788744  07_EDITABLES/piezas-fisicas/Menú_Charbela_AP.ai
+   1657795  07_EDITABLES/piezas-fisicas/Sticker de seguridad_Charbela_AP.ai
+   2267080  07_EDITABLES/piezas-fisicas/Stickers creativos_Charbela_AP.ai
+   1730376  07_EDITABLES/piezas-fisicas/Tarjeta de fidelidad_Charbela_AP.ai
+   1616172  07_EDITABLES/sistema/Cromática CMYK_Charbela_AP.ai
+    765311  07_EDITABLES/sistema/Cromática RGB_Charbela_AP.ai
+    699967  07_EDITABLES/sistema/Logotipo_Charbela_AP.ai
+   2605503  07_EDITABLES/sistema/Recursos gráficos_Charbela_AP.ai
+      5804  README.md
+      1792  VERSION.txt
+
+archivos: 166

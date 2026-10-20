@@ -1,0 +1,39 @@
+CHARBELA BRAND OS
+Version 1.0
+Exportado: 2026-10-12
+
+ORIGEN DEL SISTEMA
+  Brandbook CHARBELA_TIERRA_AP_V3 - Polen Estudio Creativo, 2026-10-01 (61 pp.)
+  Investigacion Charbela Pasteleria - Polen Estudio Creativo, 2026-10-02 (62 pp.)
+  Auditoria y brief de contratacion - 2026-08
+
+DECISIONES REGISTRADAS EN ESTA VERSION (2026-10-12)
+  Una sola marca Charbela, con el descriptivo "bakes" adoptado
+  Voz unica con dos registros: Bakes (indulgencia) y Celebracion (eventos)
+  Reparto de comunicacion 30/70 a favor de eventos hasta que la isla tenga fecha firme
+  Isla proyectada a 2027
+  Pilar 3 (creacion) en pausa: sin drops mensuales de producto nuevo
+  Migracion de identidad digital a @charbelabakes y charbela.ec: pendiente de fecha
+  Paleta Pastel-Pop, tagline anterior, Ballerina Script y Optima: retirados
+
+CONTENIDO
+  01_DOCS            BRAND.md, MICROCOPY.md, INSTRUCCIONES_PROYECTO.md
+  02_PARA_EL_EQUIPO  Guia de uso e instalacion
+  03_SKILLS          5 skills + comprimidos
+  04_TOKENS          brand-tokens.json, brand.css, integracion
+  05_MARCA           Brandbook, logotipos (svg/png/eps), tipografia, cromatica, recursos
+  06_REFERENCIA      Ejemplos de posteos y mapa de fuentes originales
+  07_EDITABLES       18 archivos .ai del estudio (requieren Illustrator) - 182 MB
+
+VERSIONES DE EXPORTACION
+  CHARBELA_BRAND_OS.zip          completo, ~250 MB (incluye 07_EDITABLES)
+  CHARBELA_BRAND_OS_LIGERO.zip   sin editables, ~64 MB
+
+APLICADO EN CODIGO (crm-charbela, sin commit al 2026-10-12)
+  src/pages/ClientQuote.jsx                     39 textos
+  src/components/WhatsAppTemplatesModal.jsx     12 textos
+
+COMO ACTUALIZAR
+  1. Editar 01_DOCS/BRAND.md con la decision y su fecha
+  2. Propagar a codigo, skills y piezas
+  3. Subir la version aqui y volver a exportar la carpeta

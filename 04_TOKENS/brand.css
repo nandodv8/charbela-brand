@@ -1,0 +1,205 @@
+/* ============================================================================
+   brand.css — Tokens de marca Charbela v1.0 (2026-10-12)
+   Fuente de verdad: BRAND_OS/BRAND.md · Derivado de: brand-tokens.json
+   ----------------------------------------------------------------------------
+   USO:
+   1. Importar este archivo ANTES de index.css en el CRM y la tienda.
+   2. El bloque [MAPEO CRM] remapea las variables que el CRM ya usa, para migrar
+      sin refactorizar componentes. Borrar ese bloque cuando los componentes
+      pasen a consumir --cb-* directamente.
+   3. Los tintes --cb-ui-* son derivados de interfaz: NO son colores de marca y
+      no se usan en piezas graficas ni impresas.
+   ============================================================================ */
+
+/* --- Tipografia (self-host; copiar los .ttf/.woff2 a /public/fonts) -------- */
+@font-face {
+  font-family: 'Parkinsans';
+  src: url('/fonts/Parkinsans-VariableFont_wght.woff2') format('woff2-variations'),
+       url('/fonts/Parkinsans-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 300 800;
+  font-display: swap;
+}
+
+:root {
+  /* === COLORES DE MARCA ================================================== */
+  --cb-cafe:          #5C3339;  /* Café Choco Chips  · texto, superficie oscura */
+  --cb-cafe-variante: #472429;  /* Café Variante     · texto largo, profundidad */
+  --cb-rosa:          #F6B3D9;  /* Rosa Antojo       · base de marca, NUNCA texto */
+  --cb-rosa-variante: #ED9DCA;  /* Rosa Variante     · hover, profundidad */
+  --cb-beige:         #FCFBF0;  /* Beige Evento      · fondo por defecto */
+  --cb-naranja:       #F9603D;  /* Naranja Metiche   · acento, max 15%, NUNCA texto */
+
+  /* === TINTES FUNCIONALES DE INTERFAZ (derivados, no de marca) =========== */
+  --cb-ui-rosa-10:    #FDF0F7;
+  --cb-ui-rosa-25:    #FBE1F0;
+  --cb-ui-beige-deep: #EFEBE1;
+  --cb-ui-border:     #DFD7CF;
+  --cb-ui-text-muted: #7F5F61;  /* 5.44:1 sobre beige */
+  --cb-ui-naranja-10: #FEE7E2;
+  --cb-ui-naranja-deep: #BB4B36; /* naranja accesible: blanco encima 5.03:1 */
+  --cb-ui-dark-surface: #271417;
+  --cb-ui-dark-base:  #1B0E10;
+
+  /* === ROLES SEMANTICOS ================================================== */
+  --cb-bg:            var(--cb-beige);
+  --cb-bg-sunken:     var(--cb-ui-beige-deep);
+  --cb-surface:       #FFFFFF;
+  --cb-text:          var(--cb-cafe);
+  --cb-text-long:     var(--cb-cafe-variante);
+  --cb-text-muted:    var(--cb-ui-text-muted);
+  --cb-text-on-dark:  var(--cb-beige);
+  --cb-border:        var(--cb-ui-border);
+
+  /* Accion: el boton primario es CAFE, no rosa.
+     Razon: blanco sobre rosa = 1.70:1 (ilegible). El rosa es superficie. */
+  --cb-action:        var(--cb-cafe);
+  --cb-action-hover:  var(--cb-cafe-variante);
+  --cb-action-text:   var(--cb-beige);
+
+  /* Acento: superficie / badge / icono. Texto encima solo grande o cafe. */
+  --cb-accent:        var(--cb-naranja);
+  --cb-accent-soft:   var(--cb-ui-naranja-10);
+  --cb-accent-text:   var(--cb-ui-naranja-deep); /* cuando el acento debe ser texto */
+
+  /* Marca visible: superficies rosas de la via Bakes */
+  --cb-brand-surface: var(--cb-rosa);
+  --cb-brand-surface-soft: var(--cb-ui-rosa-10);
+  --cb-brand-surface-hover: var(--cb-rosa-variante);
+  --cb-on-brand:      var(--cb-cafe-variante); /* 7.97:1 sobre rosa */
+
+  /* === TIPOGRAFIA ======================================================== */
+  --cb-font: 'Parkinsans', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+  --cb-w-light: 300;
+  --cb-w-regular: 400;
+  --cb-w-medium: 500;
+  --cb-w-semibold: 600;
+  --cb-w-bold: 700;
+  --cb-w-extrabold: 800;
+
+  --cb-text-display: var(--cb-w-extrabold);
+  --cb-text-heading: var(--cb-w-bold);
+  --cb-text-subheading: var(--cb-w-semibold);
+  --cb-text-button: var(--cb-w-semibold);
+  --cb-text-body: var(--cb-w-regular);
+  --cb-text-caption: var(--cb-w-light);
+
+  /* === ESTADOS DE SISTEMA ================================================
+     El naranja de marca NO se usa para error ni alerta: es color de deseo.
+     Los estados conservan su semantica propia, armonizados con la paleta. */
+  --cb-success:       #3F7D5C;
+  --cb-success-bg:    #EAF4EE;
+  --cb-warning:       #A97A1F;
+  --cb-warning-bg:    #FAF2DF;
+  --cb-danger:        #B3322F;
+  --cb-danger-bg:     #FBEAE9;
+}
+
+/* === VIAS ================================================================
+   Aplicar la clase en el contenedor raiz de cada contexto.
+   .via-bakes       → tienda, catalogo retail, piezas de impulso
+   .via-celebracion → portal de cotizacion, catalogo de eventos, documentos */
+.via-bakes {
+  --cb-bg: var(--cb-ui-rosa-10);
+  --cb-brand-surface: var(--cb-rosa);
+  --cb-accent-presence: 1;  /* naranja permitido como acento visible */
+}
+
+.via-celebracion {
+  --cb-bg: var(--cb-beige);
+  --cb-brand-surface: var(--cb-ui-beige-deep);
+  --cb-accent-presence: 0.15; /* naranja solo como detalle minimo */
+}
+
+/* === MODO OSCURO ========================================================= */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --cb-bg:           var(--cb-ui-dark-base);
+    --cb-bg-sunken:    #150A0C;
+    --cb-surface:      var(--cb-ui-dark-surface);
+    --cb-text:         var(--cb-beige);        /* 18.08:1 */
+    --cb-text-long:    var(--cb-beige);
+    --cb-text-muted:   #B99EA1;
+    --cb-border:       #3A2226;
+    --cb-action:       var(--cb-rosa);         /* 11.07:1 sobre fondo oscuro */
+    --cb-action-hover: var(--cb-rosa-variante);
+    --cb-action-text:  var(--cb-cafe-variante);
+    --cb-accent:       var(--cb-naranja);      /* 6.06:1 sobre fondo oscuro */
+    --cb-accent-text:  var(--cb-naranja);
+    --cb-brand-surface: var(--cb-ui-dark-surface);
+    --cb-on-brand:     var(--cb-beige);
+  }
+}
+
+:root[data-theme="dark"] {
+  --cb-bg:           var(--cb-ui-dark-base);
+  --cb-bg-sunken:    #150A0C;
+  --cb-surface:      var(--cb-ui-dark-surface);
+  --cb-text:         var(--cb-beige);
+  --cb-text-long:    var(--cb-beige);
+  --cb-text-muted:   #B99EA1;
+  --cb-border:       #3A2226;
+  --cb-action:       var(--cb-rosa);
+  --cb-action-hover: var(--cb-rosa-variante);
+  --cb-action-text:  var(--cb-cafe-variante);
+  --cb-accent:       var(--cb-naranja);
+  --cb-accent-text:  var(--cb-naranja);
+  --cb-brand-surface: var(--cb-ui-dark-surface);
+  --cb-on-brand:     var(--cb-beige);
+}
+
+/* ============================================================================
+   [MAPEO CRM] — Puente con las variables existentes de crm-charbela/index.css
+   Permite el corte visual sin tocar componentes. Revisar y retirar por fases.
+   ============================================================================ */
+:root {
+  --color-primary:       var(--cb-action);
+  --color-primary-dark:  var(--cb-action-hover);
+  --color-secondary:     var(--cb-ui-rosa-25);
+  --color-bg-secondary:  var(--cb-beige);
+  --color-text:          var(--cb-text);
+  --color-text-main:     var(--cb-text);
+  --color-text-muted:    var(--cb-text-muted);
+  --color-bg-base:       var(--cb-bg);
+  --color-surface:       var(--cb-surface);
+  --color-border:        var(--cb-border);
+  --color-success:       var(--cb-success);
+  --color-success-bg:    var(--cb-success-bg);
+  --color-warning:       var(--cb-warning);
+  --color-warning-bg:    var(--cb-warning-bg);
+  --color-danger:        var(--cb-danger);
+  --color-danger-bg:     var(--cb-danger-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary:      var(--cb-rosa);
+    --color-primary-dark: var(--cb-rosa-variante);
+    --color-secondary:    #2F2022;
+    --color-bg-secondary: var(--cb-ui-dark-surface);
+    --color-text:         var(--cb-text);
+    --color-text-main:    var(--cb-text);
+    --color-text-muted:   var(--cb-text-muted);
+    --color-bg-base:      var(--cb-bg);
+    --color-surface:      var(--cb-surface);
+    --color-border:       var(--cb-border);
+  }
+}
+
+/* --- Base tipografica (opcional, aplicar al migrar) ----------------------- */
+body {
+  font-family: var(--cb-font);
+  font-weight: var(--cb-text-body);
+  color: var(--cb-text);
+  background: var(--cb-bg);
+}
+
+h1, h2 { font-weight: var(--cb-text-heading); }
+h3, h4 { font-weight: var(--cb-text-subheading); }
+button, .btn { font-weight: var(--cb-text-button); }
+small, .caption { font-weight: var(--cb-text-caption); }
+
+/* --- Guardas de accesibilidad -------------------------------------------- */
+/* Prohibido: texto naranja sobre beige, blanco o rosa (2.98 / 3.1 / 1.83).
+   Si se necesita un texto de acento, usar --cb-accent-text (#BB4B36).
+   Prohibido: texto blanco o beige sobre rosa (1.70 / 1.63).
+   Sobre rosa el texto es --cb-on-brand (cafe variante). */

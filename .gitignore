@@ -1,0 +1,12 @@
+# Charbela Brand OS - Git Ignore
+# Excluir editables pesados de Adobe Illustrator (>180MB) para mantener el repo ligero (<70MB)
+07_EDITABLES/
+*.ai
+*.zip
+
+# Archivos de sistema y logs
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
