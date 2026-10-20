@@ -52,3 +52,18 @@ Para pedidos de eventos grandes (bodas, quinceañeras, eventos corporativos) don
 Para cada cotización o pedido analizado:
 - Enlace al CRM para asesores de venta: `https://crm.charbelapasteleria.com/ventas?orderId={id}`
 - Enlace interactivo para el cliente: `https://crm.charbelapasteleria.com/c/{id}`
+
+---
+
+## 📸 5. Recepción de Comprobantes Bancarios y Diseños de Clientes
+
+Desde la conversación en Claude, el agente puede adjuntar material recibido por WhatsApp o correo:
+
+1. **Comprobantes Bancarios de Pago / Abono:**
+   - **Herramienta:** `adjuntar_comprobante_pago_pedido`
+   - Parámetros: `orderId`, `comprobanteBase64` o `comprobanteUrl`, `monto`, `metodoPago` (Transferencia, Deuna, etc.), `banco`.
+   - Sube la imagen a Firebase Storage en la carpeta oficial `comprobantes/`, asocia el link al pedido y registra el abono contable actualizando el saldo al instante. Si salda el anticipo, el pedido pasa de Borrador a Aprobada automáticamente.
+
+2. **Fotos de Diseño y Pauta de Decoración:**
+   - **Herramienta:** `adjuntar_diseno_pedido`
+   - Permite cargar referencias para tortas, cupcakes y galletas tanto al crear un pedido (`crear_pedido`) como a órdenes existentes.

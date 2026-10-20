@@ -54,3 +54,23 @@ Cuando el usuario pregunte *"¿Qué hay que hacer esta semana?"*, *"¿Cómo vien
 3. **Deep-links directos:**
    Para cada pedido relevante, incluye siempre el enlace al taller:
    `https://crm.charbelapasteleria.com/produccion?orderId={id}`
+
+---
+
+## 🎨 3. Ficha de Diseño & Decoración (Pauta Técnica y Fotos de Referencia)
+
+Para pedidos con productos decorados (Tortas personalizadas, Cupcakes temáticos, Galletas decoradas, Bocaditos temáticos):
+
+- **Herramienta MCP:** `adjuntar_diseno_pedido`
+- **Capacidades:**
+  1. **Nivel General de Evento (`esDisenoGlobal: true`):**
+     - Sube y asocia la foto temática principal a `fotoDisenoEvento` y al array `adjuntos`.
+  2. **Nivel Producto Específico (`esDisenoGlobal: false`, `itemNombre: 'torta' | 'galletas' | 'cupcakes'` o `itemIndex`):**
+     - Sube la foto al array `imagenes` del producto y asigna `detalles.fotoDiseno`.
+     - Permite registrar o actualizar la **Ficha de Decoración (`pautaDiseno`)**:
+       - `textoConfirmado`: Dedicatoria exacta letra por letra (`fraseExacta`) y ubicación en la torta/base (`ubicacion`).
+       - `loQueSiLleva`: Lista de elementos obligatorios que deben estar presentes.
+       - `loQueNoLleva`: Lista de elementos prohibidos o vetados por el cliente (alergias, colores prohibidos, temas vetados).
+       - `paletaColores`: Lista de colores exactos aprobados.
+       - `loQueSiNotas` y `loQueNoNotas`: Instrucciones críticas para el personal de decoración.
+- Esta información se visualiza inmediatamente en las tarjetas Kanban del Obrador y en las hojas de impresión de taller.

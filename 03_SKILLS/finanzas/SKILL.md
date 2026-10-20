@@ -23,3 +23,7 @@ Esta habilidad equipa al agente para realizar análisis contables rigurosos resp
 3. **Flujo de Conciliación Bancaria:**
    - Interpretar correos o estados de cuenta de Banco Pichincha, Banco Guayaquil, Produbanco o Deuna.
    - Utilizar `conciliar_estado_cuenta_banco` y registrar débitos confirmados con `registrar_gastos_en_lote`.
+
+4. **Soporte y Adjunto de Facturas / Comprobantes de Gastos:**
+   - `registrar_gasto_comprobante`: Registra un gasto cargando de forma directa la imagen o PDF en `comprobanteBase64` o `comprobanteUrl` para control tributario del SRI y anti-duplicados.
+   - `adjuntar_comprobante_gasto`: Asocia el soporte digital a un gasto preexistente mediante `gastoId`. Almacena en la carpeta oficial `comprobantes/`.

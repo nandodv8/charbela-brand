@@ -26,14 +26,18 @@ Las solicitudes se clasifican en:
 
 1. `reportar_mejora_o_bug`:
    - Crea un registro en la colección `vibe_feedback` de Firestore.
-   - Parámetros: `titulo`, `descripcion`, `modulo` (`ventas`, `produccion`, `nomina`, `finanzas`, `calidad`, `general`), `tipo`, `prioridad`, `reportadoPor`.
-   - Aparece de inmediato en el botón flotante de retroalimentación dentro de la web app.
+   - Parámetros: `titulo`, `descripcion`, `modulo` (`Ventas`, `Obrador`, `Personal`, `Finanzas`, `Calidad`, `General`), `tipo`, `gravedad`, `capturaBase64` o `capturaUrl`.
+   - Si se proporciona captura o imagen de soporte, se sube automáticamente a `vibe_feedback_screenshots/` y se enlaza como `screenshotUrl`.
+   - Aparece de inmediato en el botón flotante de retroalimentación dentro de la web app con su captura visible.
 
-2. `consultar_mejoras_y_bugs`:
+2. `adjuntar_captura_mejora_bug`:
+   - Permite adjuntar una captura de pantalla o mockup a un reporte existente mediante `feedbackId` y `capturaBase64` o `capturaUrl`.
+
+3. `consultar_mejoras_y_bugs`:
    - Consulta el listado de tareas pendientes o en desarrollo por módulo.
 
-3. `actualizar_estado_mejora_bug`:
+4. `actualizar_estado_mejora_bug`:
    - Cambia el estado a `resuelto` o añade notas técnicas cuando el desarrollador completa la tarea.
 
-4. `generar_enlace_crm`:
+5. `generar_enlace_crm`:
    - Devuelve el link directo y parametrizado para cualquier pantalla o pedido del CRM.
