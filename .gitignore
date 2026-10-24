@@ -1,8 +1,18 @@
-# Charbela Brand OS - Git Ignore
-# Excluir editables pesados de Adobe Illustrator (>180MB) para mantener el repo ligero (<70MB)
+# Charbela Brand OS - Git Ignore (Repo Ultra-Ligero <200KB para Claude Projects)
+
+# Editables pesados de Adobe Illustrator (>180MB)
 07_EDITABLES/
 *.ai
 *.zip
+
+# Assets binarios pesados (respaldados en tag v1.0.0-full-assets y catalogados en 05_MARCA/CATALOGO_ASSETS.md)
+*.pdf
+*.eps
+*.png
+*.ttf
+*.woff2
+06_REFERENCIA/ejemplos-posteos/
+05_MARCA/recursos-graficos/png-sin-fondo/
 
 # Archivos de sistema y logs
 .DS_Store
